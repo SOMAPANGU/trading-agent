@@ -1,6 +1,6 @@
 # Paper trading workflow
 
-A five-minute paper account for stock-linked and crypto markets. Liquid Co-Invest Computer supplies quotes through MCP. Quiver notes are used when that MCP server is connected. Orders stay in a local ledger. The risk checks live in code.
+A five-minute paper account for stock-linked and crypto markets. Liquid Co-Invest Computer supplies quotes through MCP. Orders stay in a local ledger. The risk checks live in code.
 
 This is a paper simulator, not a broker and not financial advice.
 
@@ -37,9 +37,7 @@ Co-Invest Computer is declared in `.cursor/mcp.json`:
 
 The server answers unauthorized calls with OAuth. Cloud agents and automations do not inherit that login from the repo file. Connect the server in the Cloud Agents MCP settings, or on the automation under Tools, and sign in at Liquid. Until a run's tool list includes a Liquid research tool, the engine records `mcp_unavailable` and does not open or close anything.
 
-Quiver is optional. If its tools are present, put a short note in `snapshot.quiver` and set `usedQuiver` on the decision. If they are absent, omit the note and keep going.
-
-Execution tools from either server are ignored. This package never calls them and contains no order client.
+Execution tools are ignored. This package never calls them and contains no order client.
 
 ## Live mode
 
