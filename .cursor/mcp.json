@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "coinvest": {
+      "url": "https://coinvest-computer.liquid.trade/mcp"
+    }
+  }
+}

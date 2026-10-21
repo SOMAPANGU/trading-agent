@@ -1,0 +1,13 @@
+{
+  "name": "trading-agent",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "cycle": "node src/cli.js",
+    "test": "node --test"
+  }
+}
